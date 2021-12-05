@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43462E31C80A636AA82C2E4F /* Pods_LuckyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B9A64F45E4CD498D69FD42 /* Pods_LuckyApp.framework */; };
+		565E0324275C28DD00775395 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02EF275C28DD00775395 /* HomeViewModel.swift */; };
+		565E0325275C28DD00775395 /* CashBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02F1275C28DD00775395 /* CashBack.swift */; };
+		565E0326275C28DD00775395 /* CashBackSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02F2275C28DD00775395 /* CashBackSection.swift */; };
+		565E0327275C28DD00775395 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565E02F5275C28DD00775395 /* Home.storyboard */; };
+		565E0328275C28DD00775395 /* CashBackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02F7275C28DD00775395 /* CashBackCell.swift */; };
+		565E0329275C28DD00775395 /* CashBackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 565E02F8275C28DD00775395 /* CashBackCell.xib */; };
+		565E032A275C28DD00775395 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02FA275C28DD00775395 /* HomeViewController.swift */; };
+		565E032B275C28DD00775395 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02FD275C28DD00775395 /* DetailsViewModel.swift */; };
+		565E032C275C28DD00775395 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565E0300275C28DD00775395 /* Details.storyboard */; };
+		565E032D275C28DD00775395 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0302275C28DD00775395 /* DetailsViewController.swift */; };
+		565E032E275C28DD00775395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0304275C28DD00775395 /* AppDelegate.swift */; };
+		565E032F275C28DD00775395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0305275C28DD00775395 /* SceneDelegate.swift */; };
+		565E0330275C28DD00775395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565E0307275C28DD00775395 /* LaunchScreen.storyboard */; };
+		565E0331275C28DD00775395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565E0309275C28DD00775395 /* Main.storyboard */; };
+		565E0332275C28DD00775395 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E030C275C28DD00775395 /* Constants.swift */; };
+		565E0334275C28DD00775395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565E030F275C28DD00775395 /* Assets.xcassets */; };
+		565E0335275C28DD00775395 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0311275C28DD00775395 /* Storyboarded.swift */; };
+		565E0336275C28DD00775395 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0312275C28DD00775395 /* MainCoordinator.swift */; };
+		565E0337275C28DD00775395 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0313275C28DD00775395 /* Coordinator.swift */; };
+		565E0338275C28DD00775395 /* ServiceBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0316275C28DD00775395 /* ServiceBaseProtocol.swift */; };
+		565E0339275C28DD00775395 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0317275C28DD00775395 /* ErrorResponse.swift */; };
+		565E033A275C28DD00775395 /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0318275C28DD00775395 /* ServiceBase.swift */; };
+		565E033B275C28DD00775395 /* CashBackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E031A275C28DD00775395 /* CashBackService.swift */; };
+		565E033C275C28DD00775395 /* EndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 565E031B275C28DD00775395 /* EndPoints.plist */; };
+		565E033D275C28DD00775395 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E031D275C28DD00775395 /* UIButton+Extension.swift */; };
+		565E033E275C28DD00775395 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E031E275C28DD00775395 /* UIViewController+Extension.swift */; };
+		565E033F275C28DD00775395 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E031F275C28DD00775395 /* UIView+Borders.swift */; };
+		565E0340275C28DD00775395 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0320275C28DD00775395 /* UICollectionView+Extension.swift */; };
+		565E0341275C28DD00775395 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0321275C28DD00775395 /* UIView+Corners.swift */; };
+		565E0342275C28DD00775395 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0322275C28DD00775395 /* UIView+Shadow.swift */; };
+		565E0343275C28DD00775395 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0323275C28DD00775395 /* UICollectionViewCell+Extension.swift */; };
+		56C87E9C275C33A10083BA84 /* CashBackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C87E9B275C33A10083BA84 /* CashBackData.swift */; };
+		56C87EA7275C38530083BA84 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C87E88275C2FE00083BA84 /* HomeViewModelTests.swift */; };
+		56C87EB6275C3AED0083BA84 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02EF275C28DD00775395 /* HomeViewModel.swift */; };
+		56C87EB9275C3B160083BA84 /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0318275C28DD00775395 /* ServiceBase.swift */; };
+		56C87EBA275C3B160083BA84 /* ServiceBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0316275C28DD00775395 /* ServiceBaseProtocol.swift */; };
+		56C87EBB275C3B160083BA84 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E0317275C28DD00775395 /* ErrorResponse.swift */; };
+		56C87EBE275C3B190083BA84 /* CashBackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E031A275C28DD00775395 /* CashBackService.swift */; };
+		56C87EC1275C3B210083BA84 /* EndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 565E031B275C28DD00775395 /* EndPoints.plist */; };
+		56C87EC4275C3B260083BA84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E030C275C28DD00775395 /* Constants.swift */; };
+		56C87ECD275C3B510083BA84 /* CashBackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C87E9B275C33A10083BA84 /* CashBackData.swift */; };
+		56C87ECE275C3B510083BA84 /* CashBackSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02F2275C28DD00775395 /* CashBackSection.swift */; };
+		56C87ECF275C3B510083BA84 /* CashBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E02F1275C28DD00775395 /* CashBack.swift */; };
+		AA7F2ED4ADB3F13C31C7CB90 /* Pods_LuckyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774B356B8AA0E1D39EA55139 /* Pods_LuckyAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		565E02CA275C283000775395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565E02AB275C282D00775395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565E02B2275C282D00775395;
+			remoteInfo = LuckyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044347B9AC95AE3765BFDD26 /* Pods-LuckyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LuckyAppTests/Pods-LuckyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		45B9A64F45E4CD498D69FD42 /* Pods_LuckyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		565E02B3275C282D00775395 /* LuckyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		565E02C9275C283000775395 /* LuckyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		565E02CF275C283000775395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565E02EF275C28DD00775395 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		565E02F1275C28DD00775395 /* CashBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashBack.swift; sourceTree = "<group>"; };
+		565E02F2275C28DD00775395 /* CashBackSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashBackSection.swift; sourceTree = "<group>"; };
+		565E02F5275C28DD00775395 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		565E02F7275C28DD00775395 /* CashBackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashBackCell.swift; sourceTree = "<group>"; };
+		565E02F8275C28DD00775395 /* CashBackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CashBackCell.xib; sourceTree = "<group>"; };
+		565E02FA275C28DD00775395 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		565E02FD275C28DD00775395 /* DetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		565E0300275C28DD00775395 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		565E0302275C28DD00775395 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		565E0304275C28DD00775395 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		565E0305275C28DD00775395 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		565E0308275C28DD00775395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		565E030A275C28DD00775395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		565E030C275C28DD00775395 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		565E030D275C28DD00775395 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565E030F275C28DD00775395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		565E0311275C28DD00775395 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		565E0312275C28DD00775395 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		565E0313275C28DD00775395 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		565E0316275C28DD00775395 /* ServiceBaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceBaseProtocol.swift; sourceTree = "<group>"; };
+		565E0317275C28DD00775395 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		565E0318275C28DD00775395 /* ServiceBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceBase.swift; sourceTree = "<group>"; };
+		565E031A275C28DD00775395 /* CashBackService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashBackService.swift; sourceTree = "<group>"; };
+		565E031B275C28DD00775395 /* EndPoints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EndPoints.plist; sourceTree = "<group>"; };
+		565E031D275C28DD00775395 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		565E031E275C28DD00775395 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		565E031F275C28DD00775395 /* UIView+Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
+		565E0320275C28DD00775395 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		565E0321275C28DD00775395 /* UIView+Corners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
+		565E0322275C28DD00775395 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		565E0323275C28DD00775395 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		56C87E88275C2FE00083BA84 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		56C87E9B275C33A10083BA84 /* CashBackData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashBackData.swift; sourceTree = "<group>"; };
+		774B356B8AA0E1D39EA55139 /* Pods_LuckyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8562BC33D44C5C72BD258AC4 /* Pods-LuckyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyApp.debug.xcconfig"; path = "Target Support Files/Pods-LuckyApp/Pods-LuckyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D415FE175E7B7983166565C5 /* Pods-LuckyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyAppTests.release.xcconfig"; path = "Target Support Files/Pods-LuckyAppTests/Pods-LuckyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2849F7345AE39DEE8F1E092 /* Pods-LuckyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyApp.release.xcconfig"; path = "Target Support Files/Pods-LuckyApp/Pods-LuckyApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		565E02B0275C282D00775395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43462E31C80A636AA82C2E4F /* Pods_LuckyApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565E02C6275C283000775395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7F2ED4ADB3F13C31C7CB90 /* Pods_LuckyAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		121FE3B7F43933736B2F1DEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8562BC33D44C5C72BD258AC4 /* Pods-LuckyApp.debug.xcconfig */,
+				E2849F7345AE39DEE8F1E092 /* Pods-LuckyApp.release.xcconfig */,
+				044347B9AC95AE3765BFDD26 /* Pods-LuckyAppTests.debug.xcconfig */,
+				D415FE175E7B7983166565C5 /* Pods-LuckyAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		565E02AA275C282D00775395 = {
+			isa = PBXGroup;
+			children = (
+				565E02B5275C282D00775395 /* LuckyApp */,
+				565E02CC275C283000775395 /* LuckyAppTests */,
+				565E02B4275C282D00775395 /* Products */,
+				121FE3B7F43933736B2F1DEF /* Pods */,
+				9042260EB357C4E111194F26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		565E02B4275C282D00775395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565E02B3275C282D00775395 /* LuckyApp.app */,
+				565E02C9275C283000775395 /* LuckyAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		565E02B5275C282D00775395 /* LuckyApp */ = {
+			isa = PBXGroup;
+			children = (
+				565E0303275C28DD00775395 /* App */,
+				565E030E275C28DD00775395 /* Assets */,
+				565E0310275C28DD00775395 /* Coordinator */,
+				565E031C275C28DD00775395 /* Extensions */,
+				565E02EC275C28DD00775395 /* Modules */,
+				565E0314275C28DD00775395 /* Network */,
+				565E0306275C28DD00775395 /* Storyboards */,
+				565E030B275C28DD00775395 /* Support */,
+			);
+			path = LuckyApp;
+			sourceTree = "<group>";
+		};
+		565E02CC275C283000775395 /* LuckyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				56C87E88275C2FE00083BA84 /* HomeViewModelTests.swift */,
+				565E02CF275C283000775395 /* Info.plist */,
+			);
+			path = LuckyAppTests;
+			sourceTree = "<group>";
+		};
+		565E02EC275C28DD00775395 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				565E02ED275C28DD00775395 /* Home */,
+				565E02FB275C28DD00775395 /* Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		565E02ED275C28DD00775395 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				565E02EE275C28DD00775395 /* ViewModel */,
+				565E02F0275C28DD00775395 /* Models */,
+				565E02F3275C28DD00775395 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		565E02EE275C28DD00775395 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				565E02EF275C28DD00775395 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		565E02F0275C28DD00775395 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56C87E9B275C33A10083BA84 /* CashBackData.swift */,
+				565E02F2275C28DD00775395 /* CashBackSection.swift */,
+				565E02F1275C28DD00775395 /* CashBack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		565E02F3275C28DD00775395 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				565E02F4275C28DD00775395 /* Storyboards */,
+				565E02F6275C28DD00775395 /* Cells */,
+				565E02F9275C28DD00775395 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		565E02F4275C28DD00775395 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				565E02F5275C28DD00775395 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		565E02F6275C28DD00775395 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				565E02F7275C28DD00775395 /* CashBackCell.swift */,
+				565E02F8275C28DD00775395 /* CashBackCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		565E02F9275C28DD00775395 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				565E02FA275C28DD00775395 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		565E02FB275C28DD00775395 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				565E02FC275C28DD00775395 /* ViewModel */,
+				565E02FE275C28DD00775395 /* Views */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		565E02FC275C28DD00775395 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				565E02FD275C28DD00775395 /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		565E02FE275C28DD00775395 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				565E02FF275C28DD00775395 /* Storyboards */,
+				565E0301275C28DD00775395 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		565E02FF275C28DD00775395 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				565E0300275C28DD00775395 /* Details.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		565E0301275C28DD00775395 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				565E0302275C28DD00775395 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		565E0303275C28DD00775395 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				565E0304275C28DD00775395 /* AppDelegate.swift */,
+				565E0305275C28DD00775395 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		565E0306275C28DD00775395 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				565E0307275C28DD00775395 /* LaunchScreen.storyboard */,
+				565E0309275C28DD00775395 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		565E030B275C28DD00775395 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				565E030C275C28DD00775395 /* Constants.swift */,
+				565E030D275C28DD00775395 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		565E030E275C28DD00775395 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				565E030F275C28DD00775395 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		565E0310275C28DD00775395 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				565E0311275C28DD00775395 /* Storyboarded.swift */,
+				565E0312275C28DD00775395 /* MainCoordinator.swift */,
+				565E0313275C28DD00775395 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		565E0314275C28DD00775395 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				565E0315275C28DD00775395 /* ServiceBase */,
+				565E0319275C28DD00775395 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		565E0315275C28DD00775395 /* ServiceBase */ = {
+			isa = PBXGroup;
+			children = (
+				565E0316275C28DD00775395 /* ServiceBaseProtocol.swift */,
+				565E0317275C28DD00775395 /* ErrorResponse.swift */,
+				565E0318275C28DD00775395 /* ServiceBase.swift */,
+			);
+			path = ServiceBase;
+			sourceTree = "<group>";
+		};
+		565E0319275C28DD00775395 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				565E031A275C28DD00775395 /* CashBackService.swift */,
+				565E031B275C28DD00775395 /* EndPoints.plist */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		565E031C275C28DD00775395 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				565E031D275C28DD00775395 /* UIButton+Extension.swift */,
+				565E031E275C28DD00775395 /* UIViewController+Extension.swift */,
+				565E031F275C28DD00775395 /* UIView+Borders.swift */,
+				565E0320275C28DD00775395 /* UICollectionView+Extension.swift */,
+				565E0321275C28DD00775395 /* UIView+Corners.swift */,
+				565E0322275C28DD00775395 /* UIView+Shadow.swift */,
+				565E0323275C28DD00775395 /* UICollectionViewCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9042260EB357C4E111194F26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B9A64F45E4CD498D69FD42 /* Pods_LuckyApp.framework */,
+				774B356B8AA0E1D39EA55139 /* Pods_LuckyAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		565E02B2275C282D00775395 /* LuckyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565E02DD275C283000775395 /* Build configuration list for PBXNativeTarget "LuckyApp" */;
+			buildPhases = (
+				905351343BE0BECEE780363A /* [CP] Check Pods Manifest.lock */,
+				565E02AF275C282D00775395 /* Sources */,
+				565E02B0275C282D00775395 /* Frameworks */,
+				565E02B1275C282D00775395 /* Resources */,
+				7759F1674A003AF7E11A37A6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyApp;
+			productName = LuckyApp;
+			productReference = 565E02B3275C282D00775395 /* LuckyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		565E02C8275C283000775395 /* LuckyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565E02E0275C283000775395 /* Build configuration list for PBXNativeTarget "LuckyAppTests" */;
+			buildPhases = (
+				30C9B47B36C5E143D43358C8 /* [CP] Check Pods Manifest.lock */,
+				565E02C5275C283000775395 /* Sources */,
+				565E02C6275C283000775395 /* Frameworks */,
+				565E02C7275C283000775395 /* Resources */,
+				89A7230A4D99E765C96964F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				565E02CB275C283000775395 /* PBXTargetDependency */,
+			);
+			name = LuckyAppTests;
+			productName = LuckyAppTests;
+			productReference = 565E02C9275C283000775395 /* LuckyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		565E02AB275C282D00775395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					565E02B2275C282D00775395 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					565E02C8275C283000775395 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 565E02B2275C282D00775395;
+					};
+				};
+			};
+			buildConfigurationList = 565E02AE275C282D00775395 /* Build configuration list for PBXProject "LuckyApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 565E02AA275C282D00775395;
+			productRefGroup = 565E02B4275C282D00775395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				565E02B2275C282D00775395 /* LuckyApp */,
+				565E02C8275C283000775395 /* LuckyAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		565E02B1275C282D00775395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565E0329275C28DD00775395 /* CashBackCell.xib in Resources */,
+				565E0331275C28DD00775395 /* Main.storyboard in Resources */,
+				565E0330275C28DD00775395 /* LaunchScreen.storyboard in Resources */,
+				565E0334275C28DD00775395 /* Assets.xcassets in Resources */,
+				565E033C275C28DD00775395 /* EndPoints.plist in Resources */,
+				565E0327275C28DD00775395 /* Home.storyboard in Resources */,
+				565E032C275C28DD00775395 /* Details.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565E02C7275C283000775395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C87EC1275C3B210083BA84 /* EndPoints.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30C9B47B36C5E143D43358C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7759F1674A003AF7E11A37A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyApp/Pods-LuckyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyApp/Pods-LuckyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyApp/Pods-LuckyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89A7230A4D99E765C96964F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyAppTests/Pods-LuckyAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyAppTests/Pods-LuckyAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyAppTests/Pods-LuckyAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		905351343BE0BECEE780363A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		565E02AF275C282D00775395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565E0339275C28DD00775395 /* ErrorResponse.swift in Sources */,
+				565E032E275C28DD00775395 /* AppDelegate.swift in Sources */,
+				565E0336275C28DD00775395 /* MainCoordinator.swift in Sources */,
+				565E0337275C28DD00775395 /* Coordinator.swift in Sources */,
+				565E033F275C28DD00775395 /* UIView+Borders.swift in Sources */,
+				565E032A275C28DD00775395 /* HomeViewController.swift in Sources */,
+				565E033D275C28DD00775395 /* UIButton+Extension.swift in Sources */,
+				56C87E9C275C33A10083BA84 /* CashBackData.swift in Sources */,
+				565E032F275C28DD00775395 /* SceneDelegate.swift in Sources */,
+				565E0326275C28DD00775395 /* CashBackSection.swift in Sources */,
+				565E0341275C28DD00775395 /* UIView+Corners.swift in Sources */,
+				565E033E275C28DD00775395 /* UIViewController+Extension.swift in Sources */,
+				565E032B275C28DD00775395 /* DetailsViewModel.swift in Sources */,
+				565E033A275C28DD00775395 /* ServiceBase.swift in Sources */,
+				565E0332275C28DD00775395 /* Constants.swift in Sources */,
+				565E032D275C28DD00775395 /* DetailsViewController.swift in Sources */,
+				565E0335275C28DD00775395 /* Storyboarded.swift in Sources */,
+				565E0340275C28DD00775395 /* UICollectionView+Extension.swift in Sources */,
+				565E033B275C28DD00775395 /* CashBackService.swift in Sources */,
+				565E0338275C28DD00775395 /* ServiceBaseProtocol.swift in Sources */,
+				565E0325275C28DD00775395 /* CashBack.swift in Sources */,
+				565E0343275C28DD00775395 /* UICollectionViewCell+Extension.swift in Sources */,
+				565E0328275C28DD00775395 /* CashBackCell.swift in Sources */,
+				565E0324275C28DD00775395 /* HomeViewModel.swift in Sources */,
+				565E0342275C28DD00775395 /* UIView+Shadow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565E02C5275C283000775395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C87EBB275C3B160083BA84 /* ErrorResponse.swift in Sources */,
+				56C87ECE275C3B510083BA84 /* CashBackSection.swift in Sources */,
+				56C87EBE275C3B190083BA84 /* CashBackService.swift in Sources */,
+				56C87EA7275C38530083BA84 /* HomeViewModelTests.swift in Sources */,
+				56C87EB6275C3AED0083BA84 /* HomeViewModel.swift in Sources */,
+				56C87EC4275C3B260083BA84 /* Constants.swift in Sources */,
+				56C87EBA275C3B160083BA84 /* ServiceBaseProtocol.swift in Sources */,
+				56C87EB9275C3B160083BA84 /* ServiceBase.swift in Sources */,
+				56C87ECD275C3B510083BA84 /* CashBackData.swift in Sources */,
+				56C87ECF275C3B510083BA84 /* CashBack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		565E02CB275C283000775395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 565E02B2275C282D00775395 /* LuckyApp */;
+			targetProxy = 565E02CA275C283000775395 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		565E0307275C28DD00775395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565E0308275C28DD00775395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		565E0309275C28DD00775395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565E030A275C28DD00775395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		565E02DB275C283000775395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		565E02DC275C283000775395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		565E02DE275C283000775395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8562BC33D44C5C72BD258AC4 /* Pods-LuckyApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyApp/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurrentap.LuckyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		565E02DF275C283000775395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2849F7345AE39DEE8F1E092 /* Pods-LuckyApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyApp/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurrentap.LuckyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		565E02E1275C283000775395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 044347B9AC95AE3765BFDD26 /* Pods-LuckyAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurrentap.LuckyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyApp.app/LuckyApp";
+			};
+			name = Debug;
+		};
+		565E02E2275C283000775395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D415FE175E7B7983166565C5 /* Pods-LuckyAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurrentap.LuckyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyApp.app/LuckyApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		565E02AE275C282D00775395 /* Build configuration list for PBXProject "LuckyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565E02DB275C283000775395 /* Debug */,
+				565E02DC275C283000775395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		565E02DD275C283000775395 /* Build configuration list for PBXNativeTarget "LuckyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565E02DE275C283000775395 /* Debug */,
+				565E02DF275C283000775395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		565E02E0275C283000775395 /* Build configuration list for PBXNativeTarget "LuckyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565E02E1275C283000775395 /* Debug */,
+				565E02E2275C283000775395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 565E02AB275C282D00775395 /* Project object */;
+}
