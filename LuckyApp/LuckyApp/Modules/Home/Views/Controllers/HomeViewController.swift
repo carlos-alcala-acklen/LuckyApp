@@ -31,20 +31,23 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .white
 
         collectionView.registerCell(CashBackCell.self)
+        collectionView.registerHeaderCell(CashBackHeaderCell.self)
         collectionView.delegate = self
         collectionView.dataSource = self
 
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 20
-        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 24
+        layout.minimumInteritemSpacing = 24
 
-        let columns: CGFloat = 3
-        let offset: CGFloat = 32 + 30
-        let height: CGFloat = 220
-        let width: CGFloat = (self.view.frame.width - offset) / columns
+        let height: CGFloat = 80
+        let headerHeight: CGFloat = 60
+        let width: CGFloat = self.collectionView.frame.width - 48
+
+        print("width \(width)")
 
         layout.itemSize = CGSize(width: width, height: height)
-        layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 20, right: 16)
+        layout.headerReferenceSize = CGSize(width: width, height: headerHeight)
+        layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 24, right: 16)
         collectionView.collectionViewLayout = layout
     }
 
@@ -56,8 +59,7 @@ class HomeViewController: UIViewController {
         viewModel.fetchData(handler: { result in
             switch result {
             case .success:
-//                self.refreshUI()
-                print("success")
+                self.refreshUI()
             case .failure(let error):
                 print(error.localizedDescription)
                 self.showAlert(title: "Error", message: error.localizedDescription)
@@ -69,33 +71,54 @@ class HomeViewController: UIViewController {
 //MARK: - UICollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cashback = viewModel.items[indexPath.row]
+        let section = viewModel.data?.sections[indexPath.section]
+        guard let cashback = section?.items[indexPath.row] else {
+            return
+        }
         coordinator?.showCashBackDetail(cashback: cashback)
     }
 }
 
 //MARK: - UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return viewModel.data?.sections.count ?? 0
+    }
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.items.count
+        let section = viewModel.data?.sections[section]
+        return section?.items.count ?? 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let cell: CashBackHeaderCell = collectionView.dequeueReusableHeaderCell(forIndexPath: indexPath)
+            let title = viewModel.data?.sections[indexPath.section].title ?? ""
+            cell.backgroundColor = .blue
+            cell.configure(with: title)
+
+            return cell
+
+//        let searchTerm = searches[indexPath.section].searchTerm
+//        typedHeaderView.titleLabel.text = searchTerm
+//        return typedHeaderView
+        default:
+            assert(false, "Invalid element type")
+        }
+
+        return UICollectionReusableView()
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CashBackCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        let cashback = viewModel.items[indexPath.row]
-        cell.configure(with: cashback)
-        return cell
-    }
-}
-
-//MARK: - UIScrollViewDelegate
-extension HomeViewController: UIScrollViewDelegate {
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let currentOffset = scrollView.contentOffset.y
-        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
-
-        if maximumOffset - currentOffset <= 10.0 {
-            loadData()
+        let section = viewModel.data?.sections[indexPath.section]
+        guard let cashback = section?.items[indexPath.row] else {
+            return UICollectionViewCell()
         }
+        cell.configure(with: cashback)
+        cell.backgroundColor = .yellow
+        return cell
     }
 }

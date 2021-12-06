@@ -39,6 +39,17 @@ struct CashBackItem: Codable {
         return "REDEMPTIONS CAP: \(redemptions ?? 0) TIMES"
     }
 
+    var likes: String {
+        let count: Double = Double(favoriteCount ?? 0)
+        guard count > 1000 else {
+            let likes: Double = count
+            return likes.stringWithoutZeroFraction
+        }
+        let likes: Double = (count / 1000)
+        let format = "%.1fK"
+        return String(format: format, likes)
+    }
+
     enum CodingKeys: String, CodingKey {
         case title
         case brand
@@ -46,5 +57,11 @@ struct CashBackItem: Codable {
         case favoriteCount
         case detailUrl
         case imageUrl
+    }
+}
+
+extension Double {
+    var stringWithoutZeroFraction: String {
+        return truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(self)
     }
 }

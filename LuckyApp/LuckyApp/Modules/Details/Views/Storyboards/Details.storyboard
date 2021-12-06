@@ -199,8 +199,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="brandLabel" destination="v2C-QU-bl0" id="vWr-VK-Lz1"/>
+                        <outlet property="image" destination="Gdy-jQ-UMo" id="HzZ-g5-SBz"/>
                         <outlet property="overviewLabel" destination="4Qe-wo-mg9" id="TcW-ak-sFK"/>
-                        <outlet property="posterImage" destination="Gdy-jQ-UMo" id="efV-aa-hDl"/>
                         <outlet property="titleLabel" destination="zNw-N7-dvi" id="Yoz-ms-ccV"/>
                     </connections>
                 </viewController>

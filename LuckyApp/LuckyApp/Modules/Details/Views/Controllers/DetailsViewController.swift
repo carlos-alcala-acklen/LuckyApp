@@ -15,7 +15,6 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var tagsLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
 
     // MARK: - Variables
@@ -33,7 +32,7 @@ class DetailsViewController: UIViewController {
 
     // MARK: - Functions
     func setupUI() {
-        view.backgroundColor = .black
+        view.backgroundColor = .white
 
         image.setupRoundedCorners(radius: 12)
         image.setupBorder(color: .lightGray)
@@ -49,7 +48,6 @@ class DetailsViewController: UIViewController {
         image.sd_setImage(with: URL(string: cashback.imageUrl ?? ""), placeholderImage: UIImage())
         brandLabel.text = cashback.brand ?? ""
         titleLabel.text = cashback.title ?? ""
-        tagsLabel.text = cashback.tags ?? ""
         overviewLabel.text = cashback.overview ?? ""
     }
 }

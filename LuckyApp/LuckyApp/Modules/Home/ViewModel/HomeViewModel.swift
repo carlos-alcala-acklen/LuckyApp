@@ -35,7 +35,7 @@ extension HomeViewModel {
 
                 self.data = data
 
-                print("data \(data)")
+//                print("data \(data)")
 
                 for section in data.sections {
                     for item in section.items {
@@ -43,8 +43,8 @@ extension HomeViewModel {
                     }
                 }
 
-                print("items \(self.items)")
-                print("items.count \(self.items.count)")
+//                print("items \(self.items)")
+//                print("items.count \(self.items.count)")
 
                 handler(.success(()))
 

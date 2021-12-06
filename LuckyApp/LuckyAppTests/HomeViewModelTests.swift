@@ -52,9 +52,10 @@ class HomeViewModelTests: XCTestCase {
             switch result {
             case .success:
                 XCTAssertNotNil(self.viewModel?.data, "ViewModel data should be valid")
-                let title = self.viewModel?.data?.title
+                let title = self.viewModel?.data?.title ?? ""
                 XCTAssertEqual(title, "Offers", "ViewModel pages should count 500")
-                XCTAssertTrue(self.viewModel?.data?.sections.count == 5, "ViewModel sections should count 5")
+                XCTAssertTrue(self.viewModel?.data?.sections.count == 2, "ViewModel sections should count 2")
+                XCTAssertTrue(self.viewModel?.items.count == 8, "ViewModel total items should count 8")
                 dataExpectation.fulfill()
             case .failure:
                 XCTAssert(false, "ViewModel should not fail on this service")
