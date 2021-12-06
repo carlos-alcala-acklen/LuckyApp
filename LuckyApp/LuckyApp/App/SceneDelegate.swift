@@ -14,12 +14,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        UIFont.familyNames.sorted().forEach({print($0)})
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
-
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
 
