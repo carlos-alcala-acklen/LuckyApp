@@ -9,7 +9,11 @@ import UIKit
 import SDWebImage
 
 class CashBackHeaderCell: UICollectionViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.font = UIFont(name: "SFProText-Medium", size: 24)
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

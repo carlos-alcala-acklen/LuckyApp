@@ -3,20 +3,24 @@ PODS:
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
+  - UIColor_Hex_Swift (5.1.7)
 
 DEPENDENCIES:
   - Alamofire
   - SDWebImage (~> 5.11)
+  - UIColor_Hex_Swift (~> 5.1.7)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - SDWebImage
+    - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  UIColor_Hex_Swift: 31cd3e47440f07a20d2503a36bb0437a445b3c29
 
-PODFILE CHECKSUM: b12a3f9d9a5f133c1acdd5685eca64b2cc0bebb1
+PODFILE CHECKSUM: 9ee1887d8a98d9adf07de649b008bae4a2748f77
 
 COCOAPODS: 1.10.1
