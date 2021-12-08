@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var countLabel: UILabel!
+
     // MARK: - Variables
     weak var coordinator: MainCoordinator?
 
@@ -61,6 +63,8 @@ class HomeViewController: UIViewController {
 
     func refreshUI() {
         self.collectionView.reloadData()
+        let count = searchController.isActive ? viewModel.searchResults.count : viewModel.items.count
+        countLabel.text = "\(count)"
     }
 
     func loadData() {
@@ -151,12 +155,12 @@ extension HomeViewController: UISearchResultsUpdating, UISearchControllerDelegat
     func updateSearchResults(for searchController: UISearchController) {
         if !searchController.isActive {
             navigationItem.searchController = nil
-            collectionView.reloadData()
+            refreshUI()
         }
 
         if let searchText = searchController.searchBar.text, !searchText.isEmpty {
             viewModel.search(for: searchText)
-            collectionView.reloadData()
+            refreshUI()
         }
     }
 }

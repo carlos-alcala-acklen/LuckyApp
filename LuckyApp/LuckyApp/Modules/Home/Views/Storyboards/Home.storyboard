@@ -70,6 +70,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="a2y-Ia-gIo" id="91f-d1-SPe"/>
+                        <outlet property="countLabel" destination="fSW-vf-P2v" id="IfX-P8-bpv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
