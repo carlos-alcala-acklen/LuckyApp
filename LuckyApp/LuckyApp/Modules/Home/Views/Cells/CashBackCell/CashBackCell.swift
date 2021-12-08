@@ -14,29 +14,21 @@ class CashBackCell: UICollectionViewCell {
     @IBOutlet weak var brand: UILabel! {
         didSet {
             brand.font = UIFont(name: "SFProText-Regular", size: 10)
-            print("brand.font \(brand.font.fontName)")
-            print("brand.font \(brand.font.fontDescriptor)")
         }
     }
     @IBOutlet weak var title: UILabel! {
         didSet {
             title.font = UIFont(name: "SFProText-Bold", size: 16)
-            print("title.font \(title.font.fontName)")
-            print("title.font \(title.font.fontDescriptor)")
         }
     }
     @IBOutlet weak var tags: UILabel! {
         didSet {
             tags.font = UIFont(name: "SFProText-Regular", size: 10)
-            print("tags.font \(tags.font.fontName)")
-            print("tags.font \(tags.font.fontDescriptor)")
         }
     }
     @IBOutlet weak var likes: UILabel! {
         didSet {
             likes.font = UIFont(name: "SFProText-Regular", size: 10)
-            print("likes.font \(likes.font.fontName)")
-            print("likes.font \(likes.font.fontDescriptor)")
         }
     }
 

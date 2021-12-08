@@ -114,8 +114,6 @@ extension ServiceBase: ServiceBaseProtocol {
                         decoder.dateDecodingStrategy = .iso8601
                         let response = try decoder.decode(T.self, from: data)
 
-                        print("data: \(data)")
-                        print("response: \(response)")
                         completionBlock(.success(response: response))
                     } catch {
                         os_log("Failed parsing response data", log: OSLog.default, type: .error)

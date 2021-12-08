@@ -17,6 +17,7 @@ enum CashBackError: Error {
 class HomeViewModel: NSObject {
     var data: CashBackData?
     var items: [CashBackItem] = []
+    var searchResults: [CashBackItem] = []
     var service: ServiceProtocol?
 
     init(service: ServiceProtocol? = CashBackService()) {
@@ -35,16 +36,11 @@ extension HomeViewModel {
 
                 self.data = data
 
-//                print("data \(data)")
-
                 for section in data.sections {
                     for item in section.items {
                         self.items.append(item)
                     }
                 }
-
-//                print("items \(self.items)")
-//                print("items.count \(self.items.count)")
 
                 handler(.success(()))
 
@@ -53,8 +49,16 @@ extension HomeViewModel {
                 print("error.message \(String(describing: error.message))")
                 handler(.failure(.dataFailure))
             default:
-                print("default")
+                break
             }
         }
+    }
+
+    func search(for searchText: String) {
+        self.searchResults = items.filter({ item -> Bool in
+            guard let title = item.title else { return false }
+            let match = title.range(of: searchText, options: .caseInsensitive)
+            return match != nil
+        })
     }
 }
