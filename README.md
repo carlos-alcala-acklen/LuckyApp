@@ -36,8 +36,8 @@ The app is using some external frameworks dependencies using Cocoapods:
 - ### SDWebImage
     - A framework to handle image URL downloads easy and quick to download and display the Movie Posters 
 
-- ### SwiftLint
-    - A framework to handle best practices lint rules for Swift used as a best practice
+- ### UIColor_Hex_Swift
+    - A framework to handle HEX Colors in Swift
 
 ## Installation
 
@@ -64,6 +64,7 @@ In the root of the project we found this folder structure and files:
 |-- LuckyApp
   |-- App
   |-- Assets
+    |-- Fonts
   |-- Common
   |-- Extensions
   |-- Network
@@ -75,7 +76,7 @@ In the root of the project we found this folder structure and files:
           |-- Controllers
         |-- Models
         |-- ViewModel
-      |-- CashBackDetails
+      |-- Details
         |-- Views
           |-- Cells
           |-- Storyboards
